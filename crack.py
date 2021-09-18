@@ -6,17 +6,9 @@ from libs import pingo
 import os
 import sys
 
-options = input('You want crack? y/n ')
-
-if (options != "y" and options != "n"):
-    sys.exit('Invalid Option')
-
-passwords = (options == "y")
 text_file = open("pass.txt", "r")
-
 words = text_file.read().splitlines()
-
-hash = input('hash to crack: ')
+hash = '$2y$10$M6suvr2adomojMJjs/OEcu/7XLxp9nkdWgFlemdZ2wq23hIQG6P3.'
 length = len(words)
 
 correct_word = ""
